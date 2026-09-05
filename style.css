@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1.6;
+}
+img {
+  width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.navbar {
+  background: #492c26;
+  position: sticky;
+  top: 0;
+}
+.nav-container {
+  max-width: 1100;
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo span {
+  color: red;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-menu a {
+  color: white;
+  font-size: 12px;
+  padding: 7px 12px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.nav-menu a:hover,
+.nav-menu .active {
+  background: #6a4a42;
+}
+main {
+  width: 100%;
+}
+.hero,
+.why-us,
+.special-coffee,
+.opening-hours,
+.reviews,
+.faq,
+.coffee-club {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero {
+  max-height: 360px;
+  margin-top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: url(https//:www.google.com);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 6px 6px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.hero-content {  
+  max-width: 720px;
+  padding: 30px;
+  color: white;
+}
+.hero h1 {
+  font-size: 34px;
+  margin-bottom: 18px;
+}
+.hero p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.hero-btn {
+  display: inline-block;
+  background: #e94b1c;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.hero-btn:hover {
+  background: #c83b12;
+}
+/* why visit */
+.why-us h2,
+.opening-hours,
+.reviews h2,
+.faq h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.why-us {
+  padding: 32px 0;
+}
+.feature-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1ft);
+  gap: 20px;
+}
+.feature-card {
+  background: white;
+  border: 1px solid #e8e4df;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+.feature-card img {
+  height: 155px;
+  width: 155px;
+object-fit: cover;
+}
+,.feature-content {
+  text-align: center;
+  padding: 15px;
+}
+.feature-content h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+.feature-content p {
+  color: #666;
+  font-size: 13px;
+}
+.wide-card {
+  grid-column: 1 / -1;
+}
+.wide-card img {
+  height: 160px;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: 1ft 1ft;
+  gap: 14px;
+}
+.why-card {
+  background: white;
+  border: 1px solid #e5e1dd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+.why-card img {
+  width: 100px;
+  height: 140px;
+  display: block;
+  object-fit: cover;
+}
+.card-content {
+  padding: 14px;
+}
+.card-content h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #432f2a;
+}
+.card-content p {
+  font-size: 14px;
+  color: #666;
+}
+/* wide card */
+.wide-card {
+  grid-column: 1 / -1;
+}
+.wide-card img {
+  height: 160px;
+}
+/* special coffee */
+.special-coffee {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  display: flex;
+  grid-template-columns: 1ft 1ft;
+  background: #eeeae7;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.coffee-image {
+  height: 400px;
+}
+.coffee-image img {
+  width: 200%;
+  height: 100%;
+  object-fit: cover;
+}
+.coffee-info {
+  padding: 45px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-weight:100;
+
+}
+.recommendation {
+  width: fit-content;
+  background: #e34a20;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 5px 10ppx;
+  margin-bottom: 12px;
+}
+.coffee-info h2 {
+  font-size: 23px;
+  margin-bottom: 12px;
+}
+.coffee-info p {
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+.details-btn {
+  width: fit-content;
+  background: 35a3d36;
+  color: white;
+  padding: 9px 16px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.details-btn:hover {
+  background: #3d2924;
+}
+/* opening hours */
+.opening-hours {
+  background: white;
+  padding: 25px 25px 18px;
+  margin-bottom: 25px;
+  border: 1px solid #e7e2dc;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
+}
+thead {
+  background: #60433b;
+  color: white;
+}
+th,
+td {
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 13px;
+}
+th {
+  font-weight: bold;
+}
+tbody tr:nth-child(even) {
+  background: #f5f2ed;
+}
+tbody tr:hover {
+  background: #eee9e2;
+}
+/* costomer review */
+.reviews{
+  padding-bottom: 30px;
+}
+.review-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.review-card {
+  background: white;
+  border:1px solid #df4d25;
+  border-radius: 4px;
+  padding: 15px;
+  min-height: 105px;
+}
+.review-card:nth-child(3) {
+  grid-column: 1 /-1;
+
+}
+.review-text {
+  color: #666;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 8px;
+
+}
+.review-card h4 {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+.stars {
+  color: #e49a19;
+  font-size: 13px;
+  letter-spacing: 1px;
+
+}
+/* faq */
+.faq {
+  background: white;
+  padding: 25px 25px 15px;
+  margin-bottom: 30px;
+  border: 1px solid #e7e2dc;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+.faq-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+.faq-item:last-child {
+  border-bottom: none;
+}
+.faq-itemh3 {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.faq-item p {
+  color: #777;
+  font-size: 12px;
+}
+/* coffee club */
+.coffee-club {
+  background: #452823;
+  color: white;
+  padding: 28px 20px;
+  border-radius:  6px;
+  margin-bottom: 20px;
+}
+.club-content {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+.club-content h2 {
+  font-size 23px;
+  margin-bottom: 10px;
+}
+.club-content p {
+  font-size: 12px;
+  margin-bottom: 18px;
+  color: #ddd;
+}
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.subscribe-form input {
+  width: 25;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+.subscribe-form button {
+  background: #e54b20;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+.subscribe-form button:hover {
+  background: 4c83b16;
+}
+.footer {
+  background: #291c19;
+
+  color: #aaa;
+
+  text-align: center;
+
+  padding: 13px;
+
+  font-size: 10px;
+}
+
+.footer p {
+  margin: 2px 0;
+}
