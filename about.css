@@ -124,6 +124,58 @@ a {
   margin-bottom: 28px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
+.story-card h2 {
+  color: #49302b;
+  font-size: 23px;
+  margin-bottom: 17px;
+}
+.story-card p {
+  color: #555;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+.story-image {
+  width: 100%;
+  height: 345px;
+  margin-top: 15px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* value-card */
+.values-card {
+  background: white;
+  border: 1px solid #e5e0da;
+  border-radius: 6px;
+  padding: 25px 30px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+.values-card h2 {
+  text-align: center;
+  color: #49302b;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.values-card ul {
+  padding-left: 20px;
+}
+.values-card li {
+  color: #555;
+  font-size: 13px;
+  margin-bottom: 8px;
+  padding-left: 2px;
+}
+.values-card li::marker {
+  color: #60433b;
+}
+.values-card strong {
+  color: #493630;
+}
+
 .footer {
   background: #291c19;
 
