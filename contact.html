@@ -63,7 +63,111 @@
           </div>
         </div>
         <!--contact from-->
+        <div class="contact-form-box">
+          <h2>Send a Message</h2>
+          <form action="#" method="post">
+            <!--Full name-->
+            <div class="form-group">
+              <label for="name">
+                Full Name *
+              </label>
+              <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              required
+              >
+            </div>
+            <!--Email-->
+            <div class="form-group">
+              <label for="email">
+                Email Address *
+              </label>
+              <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="johndeo@gmail.com"
+              required
+              >
+            </div>
+            <!--Topic-->
+            <div class="form-group">
+              <label for="topic">
+                 Inquiry Topic 
+              </label>
+              <select id="topic" name="topic">
+                <option value="general">
+                  General Question
+                </option>
+                <option value="order">
+                  Coffee order
+                </option>
+                <option value="catering">
+                  Catering & Event
+                </option>
+                <option value="feedbacak">
+                  Feedback
+                </option>
+              </select>
+            </div>
+            <!--Visiting Before-->
+            <div class="form-group">
+              <label>
+                Have you visited us before?
+              </label>
+              <div class="radio-group">
+                <label class="radio-label">
+                <input
+                type="radio"
+                name="visited"
+                value="yes"
+                checked
+                >
+                Yes
+                </label>
+                <label class="radio-label">
+                  <input
+                  type="radio"
+                  name="visited"
+                  value="no"
+                  >
+                  No
+                </label>
+              </div>
+            </div>
+            <!--Message-->
+            <div class="form-group">
+              <lavel for="message">
+                Message *
+              </lavel>
+              <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message here..."
+              required
+              ></textarea>
+            </div>
+            <!--Submit-->
+            <button
+            type="submit"
+            class="subit-btn"
+            >
+            </button>
+          </form>
+        </div>
       </section>
     </main>
+    <!--Footer-->
+    <footer class="footer">
+      <p>© 2026 The Coffee Nook. All rights reserved.</p>
+
+      <p>123 Coffee Lane, Suite 4 • (555) 019-2834</p>
+    </footer>
+  </body>
+</html>
+
   </body>
 </html>
