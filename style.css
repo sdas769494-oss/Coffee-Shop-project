@@ -73,7 +73,6 @@ main {
   max-height: 360px;
   margin-top: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  background-image: url(https://share.google/ILgtCVTuKDUOKdIRv);
   background-size: cover;
   background-position: center;
   border-radius: 0 0 6px 6px;
@@ -81,31 +80,35 @@ main {
   align-items: center;
   text-align: center;
 }
+.hero img {min-height: 360px;
+  object-fit: cover;
+}
 .hero-content {  
   max-width: 720px;
   padding: 30px;
   color: white;
 }
-.hero h1 {
-  font-size: 34px;
+.hero-content h1 {
+  font-size: 30px;
   margin-bottom: 18px;
+  color: black;
 }
-.hero p {
-  font-size: 16px;
+.hero-content p {
+  font-size: 14px;
   margin-bottom: 25px;
+  color: black;
 }
-.hero-btn {
+.hero-content-btn {
   display: inline-block;
-  background: #e94b1c;
+  background: #751d02;
   color: white;
-  padding: 12px 22px;
+  padding: 8px 15px;
   border-radius: 4px;
   font-size: 14px;
-  font-weight: bold;
   transition: 0.3s;
 }
 .hero-btn:hover {
-  background: #c83b12;
+  background: #12c858;
 }
 /* why visit */
 .why-us h2,
@@ -261,8 +264,8 @@ object-fit: cover;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 .opening-hours h2 {
-  background: brown;
-  color: black;
+  background: rgb(82, 31, 31);
+  color: rgb(242, 232, 232);
   font-size: 20px;
 }
 .table-container {
@@ -291,7 +294,7 @@ tbody tr:nth-child(even) {
   background: #eee9e2;
 }
 tbody tr:hover {
-  background: red;
+  background: green;
   
 }
 /* costomer review */
