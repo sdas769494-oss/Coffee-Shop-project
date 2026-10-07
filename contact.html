@@ -14,10 +14,10 @@
         <div class="logo">The Coffee <span>Nook</span></div>
         <!--nagivation menu-->
         <nav class="nav-menu">
-          <a href="index.html" class="active">Home</a>
+          <a href="index.html">Home</a>
           <a href="menu.html">Menu</a>
           <a href="about.html">About Us</a>
-          <a href="contact.html">Contact</a>
+          <a href="contact.html" class="active">Contact</a>
         </nav>
       </div>
     </header>
@@ -32,130 +32,102 @@
       </section>
       <!--contact- cantent-->
       <section class="contact-container">
-        <!--shop information-->
-        <div class="shop-info">
-          <h2>Visit Our Shop</h2>
-          <p class="shop-intro">
-            Drop by for your morning brew or send us an inquiry anytime.
-          </p>
-          <!--Address-->
-          <div class="info-block">
-            <h3>ADDRESS</h3>
-            <p>
-              123 Coffee lane, Suite 4<br />
-              Downtown City, CA 90210
+        <div class="contact-form-container">
+          <!--shop information-->
+          <div class="shop-info">
+            <h2>Visit Our Shop</h2>
+            <p class="shop-intro">
+              Drop by for your morning brew or send us an inquiry anytime.
             </p>
-          </div>
-          <!--Phone-->
-          <div class="info-block">
-            <h3>PHONE</h3>
-            <p>(555) 019-2834</p>
-          </div>
-          <!--Email-->
-          <div class="info-block">
-            <h3>EMAIL</h3>
-            <p>hello@thecoffeenook.com</p>
-          </div>
-          <!--Catering-->
-          <div class="info-block">
-            <h3>CATRING &amp: EVENTS</h3>
-            <p>events@thecoffeenook.com</p>
-          </div>
-        </div>
-        <!--contact from-->
-        <div class="contact-form-box">
-          <h2>Send a Message</h2>
-          <form action="#" method="post">
-            <!--Full name-->
-            <div class="form-group">
-              <label for="name">
-                Full Name *
-              </label>
-              <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="John Doe"
-              required
-              >
+            <!--Address-->
+            <div class="info-block">
+              <h3>ADDRESS</h3>
+              <p>
+                123 Coffee lane, Suite 4<br />
+                Downtown City, CA 90210
+              </p>
+            </div>
+            <!--Phone-->
+            <div class="info-block">
+              <h3>PHONE</h3>
+              <p>(555) 019-2834</p>
             </div>
             <!--Email-->
-            <div class="form-group">
-              <label for="email">
-                Email Address *
-              </label>
-              <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="johndeo@gmail.com"
-              required
-              >
+            <div class="info-block">
+              <h3>EMAIL</h3>
+              <p>hello@thecoffeenook.com</p>
             </div>
-            <!--Topic-->
-            <div class="form-group">
-              <label for="topic">
-                 Inquiry Topic 
-              </label>
-              <select id="topic" name="topic">
-                <option value="general">
-                  General Question
-                </option>
-                <option value="order">
-                  Coffee order
-                </option>
-                <option value="catering">
-                  Catering & Event
-                </option>
-                <option value="feedbacak">
-                  Feedback
-                </option>
-              </select>
+            <!--Catering-->
+            <div class="info-block">
+              <h3>CATRING EVENTS</h3>
+              <p>events@thecoffeenook.com</p>
             </div>
-            <!--Visiting Before-->
-            <div class="form-group">
-              <label>
-                Have you visited us before?
-              </label>
-              <div class="radio-group">
-                <label class="radio-label">
+          </div>
+          <!--contact from-->
+          <div class="contact-form-box">
+            <h2>Send a Message</h2>
+            <form action="#" method="post">
+              <!--Full name-->
+              <div class="form-group">
+                <label for="name"> Full Name * </label>
                 <input
-                type="radio"
-                name="visited"
-                value="yes"
-                checked
-                >
-                Yes
-                </label>
-                <label class="radio-label">
-                  <input
-                  type="radio"
-                  name="visited"
-                  value="no"
-                  >
-                  No
-                </label>
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                />
               </div>
-            </div>
-            <!--Message-->
-            <div class="form-group">
-              <lavel for="message">
-                Message *
-              </lavel>
-              <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Write your message here..."
-              required
-              ></textarea>
-            </div>
-            <!--Submit-->
-            <button
-            type="submit"
-            class="submit-btn">Send Message
-            </button>
-          </form>
+              <!--Email-->
+              <div class="form-group">
+                <label for="email"> Email Address * </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="johndeo@gmail.com"
+                  required
+                />
+              </div>
+              <!--Topic-->
+              <div class="form-group">
+                <label for="topic"> Inquiry Topic </label>
+                <select id="topic" name="topic">
+                  <option value="general">General Question</option>
+                  <option value="order">Coffee order</option>
+                  <option value="catering">Catering Event</option>
+                  <option value="feedbacak">Feedback</option>
+                </select>
+              </div>
+              <!--Visiting Before-->
+              <div class="form-group">
+                <label> Have you visited us before? </label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="visited" value="yes" checked />
+                    Yes
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="visited" value="no" />
+                    No
+                  </label>
+                </div>
+              </div>
+              <!--Message-->
+              <div class="form-group">
+                <label for="message"> Message * </lavel>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+              <!--Submit-->
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
@@ -165,8 +137,5 @@
 
       <p>123 Coffee Lane, Suite 4 • (555) 019-2834</p>
     </footer>
-  </body>
-</html>
-
   </body>
 </html>

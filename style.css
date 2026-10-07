@@ -17,13 +17,15 @@ img {
 a {
   text-decoration: none;
 }
+
 .navbar {
   background: #492c26;
   position: sticky;
   top: 0;
+  z-index: 9999;
 }
 .nav-container {
-  max-width: 1100;
+  max-width: 1100px;
   margin: auto;
   padding: 10px 20px;
   display: flex;
@@ -65,14 +67,14 @@ main {
 .reviews,
 .faq,
 .coffee-club {
-  max-width: 1100px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 .hero {
-  max-height: 360px;
+  /* max-height: 360px; */
   margin-top: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  padding-top: 50px;
   background-size: cover;
   background-position: center;
   border-radius: 0 0 6px 6px;
@@ -80,24 +82,38 @@ main {
   align-items: center;
   text-align: center;
 }
-.hero img {min-height: 360px;
+.hero img {
+  min-height: 360px;
   object-fit: cover;
 }
-.hero-content {  
-  max-width: 720px;
-  padding: 30px;
+.hero-content {
   color: white;
+  position: relative;
 }
+
 .hero-content h1 {
   font-size: 30px;
   margin-bottom: 18px;
-  color: black;
+  color: white;
 }
 .hero-content p {
-  font-size: 14px;
+  font-size: 18x;
   margin-bottom: 25px;
-  color: black;
+  color: white;
 }
+
+.hero-img-text {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
 .hero-content-btn {
   display: inline-block;
   background: #751d02;
@@ -107,8 +123,15 @@ main {
   font-size: 14px;
   transition: 0.3s;
 }
-.hero-btn:hover {
-  background: #12c858;
+
+.hero-btn:visited {
+  color: white;
+}
+
+.hero-btn {
+  background: #432f2a;
+  padding: 4px 18px;
+  border-radius: 4px;
 }
 /* why visit */
 .why-us h2,
@@ -126,8 +149,14 @@ main {
   grid-template-columns: repeat(2, 1ft);
   gap: 20px;
   display: inline;
-  
 }
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .feature-card {
   background: white;
   border: 1px solid #e8e4df;
@@ -137,10 +166,11 @@ main {
 }
 .feature-card img {
   height: 120px;
-  width: 200px;
-object-fit: cover;
+  /* width: 200px; */
+  object-fit: cover;
 }
-,.feature-content {
+
+.feature-content {
   text-align: center;
   padding: 15px;
 }
@@ -200,17 +230,17 @@ object-fit: cover;
 .special-coffee {
   margin-top: 5px;
   margin-bottom: 30px;
-  display: flex;
-  grid-template-columns: 1ft 1ft;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background: #eeeae7;
   border-radius: 4px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .coffee-image {
   height: 400px;
 }
 .coffee-image img {
-  width: 200%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -219,8 +249,7 @@ object-fit: cover;
   display: flex;
   flex-direction: column;
   justify-content: left;
-  font-weight:100;
-
+  font-weight: 100;
 }
 .recommendation {
   width: fit-content;
@@ -245,7 +274,7 @@ object-fit: cover;
 .btn {
   width: fit-content;
   background: brown;
-  color:white;
+  color: white;
   padding: 5px 10px;
   border-radius: 3px;
   font-size: 12px;
@@ -295,10 +324,9 @@ tbody tr:nth-child(even) {
 }
 tbody tr:hover {
   background: green;
-  
 }
 /* costomer review */
-.reviews{
+.reviews {
   padding-bottom: 30px;
 }
 .reviews h4 {
@@ -310,7 +338,7 @@ tbody tr:hover {
 }
 .review-card {
   background: white;
-  border:1px solid #864d3d;
+  border: 1px solid #864d3d;
   border-radius: 2px;
   padding: 15px;
   min-height: 105px;
@@ -322,7 +350,6 @@ tbody tr:hover {
 .stars {
   color: #ec9706;
   font-size: 10px;
-
 }
 /* faq */
 .faq {
@@ -355,7 +382,7 @@ tbody tr:hover {
   background: #452823;
   color: white;
   padding: 28px 20px;
-  border-radius:  6px;
+  border-radius: 6px;
   margin-bottom: 20px;
 }
 .club-content {
@@ -364,7 +391,7 @@ tbody tr:hover {
   margin: auto;
 }
 .club-content h2 {
-  font-size 23px;
+  font-size: 23px;
   margin-bottom: 10px;
 }
 .club-content p {
@@ -376,7 +403,6 @@ tbody tr:hover {
   display: flex;
   justify-content: center;
   gap: 8px;
-  
 }
 .subscribe-form input {
   width: 25;
