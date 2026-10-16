@@ -113,7 +113,13 @@ main {
   align-items: center;
   /* justify-content: center; */
 }
-
+.hero-img-text h1 {
+  color: blue;
+}
+.hero-img-text p {
+  color: yellow;
+  font-weight: bold;
+}
 .hero-content-btn {
   display: inline-block;
   background: #751d02;
